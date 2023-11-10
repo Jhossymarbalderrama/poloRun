@@ -17,7 +17,12 @@ export class InputHandler{
                     e.key === 'Enter'
                 ) && this.keys.indexOf(e.key) === -1){
                     this.keys.push(e.key);
-                }else if(e.key === 'd') this.game.debug = !this.game.debug;  
+                }
+                // else if(e.key === 'd') this.game.debug = !this.game.debug;  
+                if(e.key == 'r' || e.key == 'R'){
+                    console.log("restart");
+                    window.location.reload();
+                }
             });
 
 

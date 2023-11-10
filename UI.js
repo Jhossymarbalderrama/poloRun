@@ -37,11 +37,11 @@ export class UI{
             if(this.game.score > this.game.winningScore){
                 context.fillText('Exterminio!!', this.game.width * 0.5, this.game.height * 0.5 - 20);
                 context.font = this.fontSize * 0.7 + 'px ' + this.fontFamily;  
-                context.fillText('Quien es el señor de la noche???. Eres tú!!!', this.game.width * 0.5, this.game.height * 0.5 + 5);
+                context.fillText('presione la tecla "R" para reiniciar', this.game.width * 0.5, this.game.height * 0.5 + 5);
             }else{
-                context.fillText('Te quedaras satisfecho con eso ultimo?', this.game.width * 0.5, this.game.height * 0.5 - 20);
+                context.fillText('GAME OVER', this.game.width * 0.5, this.game.height * 0.5 - 20);
                 context.font = this.fontSize * 0.7 + 'px ' + this.fontFamily;  
-                context.fillText('Vuelve a pelear!!!', this.game.width * 0.5, this.game.height * 0.5 + 5);
+                context.fillText('presione la tecla "R" para reiniciar', this.game.width * 0.5, this.game.height * 0.5 + 5);
             }
         }
 
